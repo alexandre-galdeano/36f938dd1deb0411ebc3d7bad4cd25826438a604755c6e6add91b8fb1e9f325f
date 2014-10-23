@@ -1,0 +1,210 @@
+@import url(bootstrap-default.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #555;
+}
+
+.slide_inside {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 2px rgb(36, 120, 65);
+}
+
+textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable- input:focus {
+    border-color: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    outline: rgb(36, 120, 65) auto 2px;
+}
+
+a {
+    color: rgb(36, 120, 65);
+}
+
+a:hover {
+    color: rgb(36, 120, 65);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    /*color: rgb(179, 12, 16);*/
+    background: -webkit-linear-gradient(#DD2724, #830000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+    color: #fff;
+    background: -webkit-linear-gradient(top right, red, rgb(253, 227, 13)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top right, red, blue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top right, red, blue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top right, red, blue); /* Standard syntax */
+    border-color: rgb(36, 120, 65);
+}
+
+.scrollspy-policy {
+    text-align: left;
+    height: 200px;
+    overflow: scroll;
+}
+
+.center-block {
+    float: none;
+}
+
+.well {
+    margin-bottom: 1px;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.content {
+    padding: 0px;
+}
+
+.carousel-control {
+    font-color: white;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: -10px;
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(61%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 61%, rgba(0, 0, 0, 0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.carousel-indicators:hover {
+
+    background: -moz-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(0, 0, 0, 0.65)), color-stop(70%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+span[data-tooltip] {
+    position: relative;
+    z-index: 5;
+}
+
+span[data-tooltip]::before,
+span[data-tooltip]::after {
+    position: absolute;
+    display: none;
+    opacity: 0.85;
+}
+
+span[data-tooltip]::before {
+    /*
+     * using data-tooltip instead of title so we
+     * don't have the real tooltip overlapping
+     */
+    content: attr(data-tooltip);
+    background: #000;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 5px;
+    /* we don't want the text to wrap */
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+span[data-tooltip]::after {
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    content: '';
+}
+
+span[data-tooltip]:hover::before,
+span[data-tooltip]:hover::after {
+    display: block;
+}
+
+/** positioning **/
+
+/* left tooltip */
+span[data-tooltip][data-placement="left"]::before {
+    top: -25%;
+    right: 100%;
+    margin-right: 10px;
+}
+
+span[data-tooltip][data-placement="left"]::after {
+    border-left-color: #000;
+    border-right: none;
+    top: 50%;
+    right: 100%;
+    margin-top: -6px;
+    margin-right: 4px;
+}
+
+/* right tooltip */
+span[data-tooltip][data-placement="right"]::before {
+    top: -25%;
+    left: 100%;
+    margin-left: 10px;
+}
+
+span[data-tooltip][data-placement="right"]::after {
+    border-right-color: #000;
+    border-left: none;
+    top: 50%;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: 4px;
+}
+
+/* top tooltip */
+span[data-tooltip][data-placement="top"]::before {
+    bottom: 100%;
+    left: 0;
+    margin-bottom: 10px;
+}
+
+span[data-tooltip][data-placement="top"]::after {
+    border-top-color: #000;
+    border-bottom: none;
+    bottom: 100%;
+    left: 10px;
+    margin-bottom: 4px;
+}
+
+/* bottom tooltip */
+span[data-tooltip][data-placement="bottom"]::before {
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+}
+
+span[data-tooltip][data-placement="bottom"]::after {
+    border-bottom-color: #000;
+    border-top: none;
+    top: 100%;
+    left: 10px;
+    margin-top: 4px;
+}
