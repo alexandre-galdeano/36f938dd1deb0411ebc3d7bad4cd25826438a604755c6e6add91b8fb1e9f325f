@@ -1,9 +1,50 @@
 <?php $this->titre = "Accueil"; ?>
 <?php include_once("Vue/_Commun/header.php"); ?>
-    <div class="slide_inside col-sm-8 col-md-6 col-lg-4 center-block">
-        <h1>Bienvenue sur Ugame !</h1>
-        Que vous cherchiez un jeu neuf ou d'occasion, récent ou plus ancien,
-        sur n'importe quelle plateforme, de n'importe quel genre et le tout à des prix cassé, vous êtes au bon
-        endroit
+<div class="slide_inside col-sm-8 col-md-6 col-lg-4 center-block">
+    <div class="row">
+
+        <p>
+            Ici vous pouvez gérer toutes les demandes d'intérimaires.</p>
     </div>
+    <div class="row">
+        <div class="btn-group btn-group-justified">
+            <div class="btn-group">
+                <a href="#">
+                    <button type="button" class="btn btn-default disabled">Nouvelle</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="btn-group btn-group-justified">
+            <div class="btn-group">
+                <a href="#">
+                    <button type="button" class="btn btn-default disabled">En cours</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="btn-group btn-group-justified">
+            <div class="btn-group">
+                <a href="#">
+                    <button type="button" class="btn btn-default disabled">Historique</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <?php if (isset($user['isAdmin'])) : ?>
+        <hr>
+        <div class="row">
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <a href="#">
+                        <button type="button" class="btn btn-default disabled">Administration</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    <?php endif; ?>
+</div>
 <?php include_once("Vue/_Commun/footer.php"); ?>
+

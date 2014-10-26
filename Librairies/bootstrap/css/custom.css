@@ -7,10 +7,8 @@ body {
 }
 
 .slide_inside {
-    margin-top: 1px;
-    margin-bottom: 1px;
     padding: 20px;
-    box-shadow: 0px 0px 5px 2px rgb(36, 120, 65);
+    box-shadow: 0px 0px 5px 2px rgb(36, 120, 65) inset;
 }
 
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable- input:focus {
@@ -45,27 +43,17 @@ h2 {
     -webkit-text-fill-color: transparent;
 }
 
-.btn {
+.btn:hover {
     color: #fff;
-    font-weight: bold;
     text-shadow: 0px 0px 1px #000000,
     1px -1px 1px #000000,
     -1px 1px 1px #000000,
     -1px -1px 1px #000000;
     background: -webkit-linear-gradient(top right, red, rgb(253, 227, 13)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(top right, red, blue); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(top right, red, blue); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(top right, red, blue); /* Standard syntax */
+    background: -o-linear-gradient(top right, red, rgb(253, 227, 13)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top right, red, rgb(253, 227, 13)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(top right, red, rgb(253, 227, 13)); /* Standard syntax */
     border-color: rgb(36, 120, 65);
-}
-
-.btn:hover {
-    color: #fff;
-    font-weight: bold;
-    background: -webkit-linear-gradient(bottom left, red, rgb(253, 227, 13)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom left, red, rgb(253, 227, 13)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom left, red, rgb(253, 227, 13)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(bottom left, red, rgb(253, 227, 13)); /* Standard syntax */
 }
 
 .scrollspy-policy {
