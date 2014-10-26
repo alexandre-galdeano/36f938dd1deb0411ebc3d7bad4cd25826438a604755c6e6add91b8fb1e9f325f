@@ -30,10 +30,6 @@ a:hover {
 
 h1 {
     text-align: center;
-}
-
-h2 {
-    text-align: center;
     font-weight: bold;
     /*color: rgb(179, 12, 16);*/
     background: -webkit-linear-gradient(#DD2724, #830000);
@@ -41,13 +37,35 @@ h2 {
     -webkit-text-fill-color: transparent;
 }
 
-.btn-primary {
+h2 {
+    text-align: center;
+    /*color: rgb(179, 12, 16);*/
+    background: -webkit-linear-gradient(#DD2724, #830000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
     color: #fff;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #000000,
+    1px -1px 1px #000000,
+    -1px 1px 1px #000000,
+    -1px -1px 1px #000000;
     background: -webkit-linear-gradient(top right, red, rgb(253, 227, 13)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(top right, red, blue); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(top right, red, blue); /* For Firefox 3.6 to 15 */
     background: linear-gradient(top right, red, blue); /* Standard syntax */
     border-color: rgb(36, 120, 65);
+}
+
+.btn:hover {
+    color: #fff;
+    font-weight: bold;
+    background: -webkit-linear-gradient(bottom left, red, rgb(253, 227, 13)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom left, red, rgb(253, 227, 13)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom left, red, rgb(253, 227, 13)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(bottom left, red, rgb(253, 227, 13)); /* Standard syntax */
 }
 
 .scrollspy-policy {

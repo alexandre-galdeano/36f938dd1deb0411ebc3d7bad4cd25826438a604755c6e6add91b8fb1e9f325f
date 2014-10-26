@@ -51,6 +51,6 @@ class ControleurConnexion extends Controleur
     public function deconnecter()
     {
         $this->requete->getSession()->detruire();
-        $this->rediriger("Accueil");
+        $this->rediriger("Connexion");
     }
 }

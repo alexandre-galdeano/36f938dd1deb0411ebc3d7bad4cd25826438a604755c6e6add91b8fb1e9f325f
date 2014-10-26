@@ -16,6 +16,8 @@ abstract class ControleurPersonnalise extends Controleur
         $client = null;
         if ($this->requete->getSession()->existeAttribut("user")) {
             $user = $this->requete->getSession()->getAttribut("user");
+        } else {
+            $this->rediriger("connexion");
         }
         parent::genererVue($donneesVue + array('user' => $user), $action);
     }

@@ -1,3 +1,4 @@
+<?php /*
 <?php $this->titre = "Connexion"; ?>
 <?php include_once("Vue/_Commun/header.php"); ?>
     <div class="slide_inside col-sm-10 col-md-6 col-lg-4 center-block">
@@ -6,7 +7,7 @@
         <form class="form-signin form-horizontal" role="form" action="connexion/connecter" method="post">
             <div class="form-group">
                 <br/>
-                <?php if (isset($msgErreur)) : ?>
+
                     <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
                         <div class="alert alert-danger alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert"
@@ -14,7 +15,6 @@
                             <strong>Erreur !</strong> <?= $this->nettoyer($msgErreur) ?>
                         </div>
                     </div>
-                <?php endif; ?>
                 <div class="col-sm-6 col-sm-offset-3 col-md-6">
                     <input name="login" type="text" class="form-control"
                            placeholder="Entrez votre login" required autofocus>
@@ -36,3 +36,4 @@
         </form>
     </div>
 <?php include_once("Vue/_Commun/footer.php"); ?>
+ */

@@ -1,7 +1,7 @@
 <?php $this->titre = "Connexion"; ?>
 <?php include_once("Vue/_Commun/header.php"); ?>
-    <div class="slide_inside col-sm-10 col-md-6 col-lg-4 center-block">
-        <h2>Identification client</h2>
+    <div class="slide_inside col-sm-8 col-md-6 col-lg-4 center-block">
+    <h2>Identification client</h2>
 
         <form class="form-signin form-horizontal" role="form" action="connexion/connecter" method="post">
             <div class="form-group">
