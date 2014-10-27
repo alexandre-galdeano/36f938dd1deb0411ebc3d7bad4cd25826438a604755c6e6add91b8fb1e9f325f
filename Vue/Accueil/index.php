@@ -2,6 +2,7 @@
 <?php include_once("Vue/_Commun/header.php"); ?>
 <div class="slide_inside col-sm-8 col-md-6 col-lg-4 center-block">
     <div class="row">
+        <h2>Demande d'intérimaire</h2>
 
         <p>
             Ici vous pouvez gérer toutes les demandes d'intérimaires.</p>
@@ -9,8 +10,8 @@
     <div class="row">
         <div class="btn-group btn-group-justified">
             <div class="btn-group">
-                <a href="#">
-                    <button type="button" class="btn btn-default disabled">Nouvelle</button>
+                <a href="BonCommande">
+                    <button type="button" class="btn btn-default">Nouvelle</button>
                 </a>
             </div>
         </div>
